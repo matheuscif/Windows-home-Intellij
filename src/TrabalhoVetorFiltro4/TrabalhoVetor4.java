@@ -1,22 +1,12 @@
-package TrabalhoVetor;
-
+package TrabalhoVetorFiltro4;
 import java.util.Scanner;
-
-public class Trabalho {
+public class TrabalhoVetor4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int tamanho, operacao;
 
         //to do (Garantir que o tamanho seja positivo e inteiro)
-        // MUDAR TODOS OS FILTROS DE NUMERO INTEIRO..
-        /* do {
-            System.out.println("Digite o valor do tamanho do vetor:");
-            while (!scanner.hasNextInt()) {
-                System.out.println("Valor inválido! Digite outro valor");
-                scanner.next();
-            }
-            tamanho = scanner.nextInt();
-        } while (tamanho <= 0); */
+
 
         System.out.println("Informe um valor inteiro e positivo para ser o tamanho do vetor:");
         tamanho = scanner.nextInt();
@@ -39,14 +29,14 @@ public class Trabalho {
             System.out.println("Operação 5 - Finalizar o programa.\n");
 
             //to do (Garantir que o usuário informe uma operação válida)
-            do {
-                System.out.println("Informe a operação desejada:");
-                while (!scanner.hasNextInt()) {
-                    System.out.println("Digite uma operação válida...");
-                    scanner.next();
-                }
+            // FILTRO
+            operacao = scanner.nextInt();
+
+            while (operacao < 0 || operacao > 5) {
+                System.out.println("Operação inválida!");
+                System.out.println("Digite um valor para a operação:");
                 operacao = scanner.nextInt();
-            } while (operacao <= 0 || operacao > 5);
+            }
 
             if (operacao == 1) {
                 //operacao é 1.
@@ -61,16 +51,18 @@ public class Trabalho {
                 }
             } else if (operacao == 3) {
                 // operacao 3 consultar por índice
-                int indice = -1;
-                do {
-                    System.out.println("Digite o índice que deseja visualizar:");
-                    while (!scanner.hasNextInt()) {
-                        System.out.println("Índice não encontrado, digite outro...");
-                        scanner.nextInt();
-                    }
+                // FILTRO
+                System.out.println("Informe o índice que deseja visualizar: ");
+                int indice = scanner.nextInt();
+
+                while(indice < 0 || indice > tamanho) {
+                    System.out.println("O valor informado não é positivo.");
+                    System.out.println("Informe um valor inteiro e positivo para ser o tamnaho do vetor:");
                     indice = scanner.nextInt();
-                } while (indice < 0 || indice > tamanho);
+                }
+
                 System.out.println("vetor[" + indice + "] = " + vetor[indice]);
+
             } else if (operacao == 4) {
                 continue;
                 /* int indice = -1;
