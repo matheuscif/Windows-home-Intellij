@@ -45,7 +45,7 @@ public class TrabalhoVetor4 {
                     vetor[i] = scanner.nextInt();
                 }
             } else if (operacao == 2) {
-                //operacao 2.
+                // operacao 2.
                 for (int i = 0; i < tamanho; i++) {
                     System.out.println("vetor[" + i + "] = " + vetor[i]);
                 }
@@ -64,16 +64,21 @@ public class TrabalhoVetor4 {
                 System.out.println("vetor[" + indice + "] = " + vetor[indice]);
 
             } else if (operacao == 4) {
-                continue;
-                /* int indice = -1;
-                do {
-                    System.out.println("Digite o vetor que deseja remover: ");
-                    while (!scanner.hasNextInt()) {
-                        System.out.println("Vetor não encontrado, digite outro...");
-                        scanner.next();
-                    }
+                System.out.println("Digite o indice do vetor que deseja remover: ");
+                int indice = scanner.nextInt();
+
+                while (indice < 0 || indice > tamanho) {
+                    System.out.println("Digite um índice válido: ");
                     indice = scanner.nextInt();
-                } while (indice < 0 || indice > tamanho); */
+                }
+
+                // loop de remoção
+
+                for (int i = indice; i < tamanho - 1; i++) {
+                    vetor[i] = vetor[i + 1];
+                }
+
+                tamanho = tamanho - 1;
 
 
             }
