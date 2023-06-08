@@ -8,25 +8,40 @@ import java.util.Arrays;
 * Sempre pergunta se user quer add mais um numero*/
 public class Listas79 {
     public static void main(String[] args) {
-        /* Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
 
-        String continuar = "S";
+        int[] vetor = new int[100];
+        boolean continuar = true;
         int tamanho = 0;
-        int [] vetor = new int [tamanho];
-
-        do {
-            int i = 0;
-            System.out.println("Deseja adicionar um número a lista? [S/N]");
-            continuar = scanner.next();
-
-            System.out.println("Adicione um número a lista:");
-            scanner.nextInt(vetor[i]);
 
 
+        while(continuar && tamanho < vetor.length) {
+            System.out.println("Adicione um número no array ou [0] para encerrar: ");
+            int numero = scanner.nextInt();
 
-        } while(continuar == "S");
+            if (numero == 0) {
+                continuar = false;
+            } else {
+                boolean jaexiste = false;
 
-        */
+                for (int i = 0; i < tamanho; i++) {
+                    if (vetor[i] == numero) {
+                        jaexiste = true;
+                        break;
+                    }
+                }
+                if (!jaexiste) {
+                    vetor[tamanho] = numero;
+                    tamanho++;
+                }
+            }
+
+        }
+        Arrays.sort(vetor, 0, tamanho);
+
+        for (int i = 0; i < tamanho; i++) {
+            System.out.println(i + " " + vetor[i]);
+        }
 
     }
 }
