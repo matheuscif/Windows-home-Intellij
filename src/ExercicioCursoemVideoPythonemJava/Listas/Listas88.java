@@ -24,9 +24,7 @@ public class Listas88 {
             while (jogo.size() < 6) {
                 int randomInt = secureRandom.nextInt(1,60);
 
-                if (jogo.contains(randomInt)) {
-                    continue;
-                } else {
+                if (!jogo.contains(randomInt)) {
                     jogo.add(randomInt);
                 }
             }
