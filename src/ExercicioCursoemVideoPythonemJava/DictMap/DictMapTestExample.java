@@ -54,6 +54,7 @@ public class DictMapTestExample {
                 }
             } else if (opcao == 3) {
                 // 3 - Verificar se aluno existe."); // containsKey(key)
+                // comentario aleatorio pra testar como vai o commit  
             } else if (opcao == 4) {
                 // 4 - Verificar se algum aluno tirou nota específica."); //containsValue(value)
             } else if (opcao == 5) {
