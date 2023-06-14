@@ -22,7 +22,7 @@ public class Listas88 {
         do {
             List<Integer> jogo = new ArrayList<>();
             while (jogo.size() < 6) {
-                int randomInt = secureRandom.nextInt(1,60);
+                int randomInt = secureRandom.nextInt(60 + 1);
 
                 if (!jogo.contains(randomInt)) {
                     jogo.add(randomInt);
