@@ -13,8 +13,15 @@ public class Professor {
     public void imprimir(){
         System.out.println(this.nome);
         System.out.println(this.especialidade);
-        for (Seminario seminarios : seminarios){
-            System.out.println(seminarios.getTitulo());
+        if (this.seminarios == null) return;
+        for (Seminario seminario : this.seminarios){
+            System.out.println(seminario.getTitulo());
+            System.out.println(seminario.getLocal().getEndereco());
+            if (seminario.getAlunos() == null || seminario.getAlunos().length == 0) continue;
+            System.out.println("**Alunos**");
+            for (Aluno aluno : seminario.getAlunos()) {
+                System.out.println("Aluno: " + aluno.getNome() + " Idade: " + aluno.getIdade());
+            }
         }
     }
 

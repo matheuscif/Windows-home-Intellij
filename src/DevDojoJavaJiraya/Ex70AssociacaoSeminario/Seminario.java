@@ -15,7 +15,7 @@ public class Seminario {
         System.out.println(this.titulo);
         System.out.println(local.getEndereco());
         System.out.println(professor.getNome());
-
+        if (this.alunos == null) return;
         for (Aluno aluno : alunos){
             System.out.println(aluno.getNome());
         }
@@ -36,5 +36,13 @@ public class Seminario {
 
     public void setProfessor(Professor professor) {
         this.professor = professor;
+    }
+
+    public Local getLocal() {
+        return local;
+    }
+
+    public void setLocal(Local local) {
+        this.local = local;
     }
 }
