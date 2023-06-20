@@ -1,0 +1,22 @@
+Crie uma hierarquia de classes relacionadas a veículos. A classe pai será chamada de "Veiculo" e terá os seguintes
+atributos privados:
+
+marca (uma String representando a marca do veículo)
+ano (um inteiro representando o ano de fabricação do veículo)
+A classe "Veiculo" também terá um construtor que recebe a marca e o ano como parâmetros e os atribui aos atributos
+correspondentes. Além disso, terá um método público chamado "mostrarInformacoes" que imprime na tela a marca e o ano do
+veículo.
+
+A partir da classe "Veiculo", crie duas classes filhas chamadas "Carro" e "Moto". Ambas as classes devem herdar da
+classe "Veiculo".
+
+A classe "Carro" deve ter um atributo privado adicional chamado "modelo" (uma String representando o modelo do carro)
+e um construtor que recebe a marca, o ano e o modelo como parâmetros. Ela deve chamar o construtor da classe "Veiculo"
+passando a marca e o ano, e depois atribuir o modelo ao atributo correspondente. Além disso, a classe "Carro" deve ter
+um método público chamado "mostrarInformacoes" que imprime na tela a marca, o modelo e o ano do carro.
+
+A classe "Moto" deve ter um atributo privado adicional chamado "cilindradas"
+(um inteiro representando a cilindrada da moto) e um construtor que recebe a marca, o ano e as cilindradas como
+parâmetros. Ela deve chamar o construtor da classe "Veiculo" passando a marca e o ano, e depois atribuir as
+cilindradas ao atributo correspondente. Além disso, a classe "Moto" deve ter um método público chamado
+"mostrarInformacoes" que imprime na tela a marca, as cilindradas e o ano da moto.

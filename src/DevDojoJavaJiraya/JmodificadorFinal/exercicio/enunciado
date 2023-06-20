@@ -1,0 +1,11 @@
+Crie uma classe chamada "Circulo" que represente um círculo. Essa classe deve ter os seguintes atributos privados:
+
+raio (um double representando o raio do círculo)
+A classe "Circulo" também deve ter um construtor que recebe o raio como parâmetro e o atribui ao atributo correspondente.
+
+Além disso, a classe "Circulo" deve ter os seguintes métodos públicos:
+
+calcularArea(): que retorna a área do círculo (fórmula: área = pi * raio * raio)
+calcularPerimetro(): que retorna o perímetro do círculo (fórmula: perímetro = 2 * pi * raio)
+mostrarInformacoes(): que imprime na tela o raio, a área e o perímetro do círculo.
+Agora, faça a classe "Circulo" ser final, impedindo que outras classes possam herdar dela.

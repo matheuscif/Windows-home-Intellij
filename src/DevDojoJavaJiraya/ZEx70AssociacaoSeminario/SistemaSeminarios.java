@@ -1,4 +1,4 @@
-package DevDojoJavaJiraya.Ex70AssociacaoSeminario;
+package DevDojoJavaJiraya.ZEx70AssociacaoSeminario;
 
 public class SistemaSeminarios {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package DevDojoJavaJiraya.Ex70AssociacaoSeminario;
+package DevDojoJavaJiraya.ZEx70AssociacaoSeminario;
 
 public class Local {
     private String endereco;

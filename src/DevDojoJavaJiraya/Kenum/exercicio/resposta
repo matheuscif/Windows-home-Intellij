@@ -1,0 +1,28 @@
+public enum TipoProduto {
+    CELULAR("Smartphone"),
+    TABLET("Tablet"),
+    NOTEBOOK("Notebook"),
+    TELEVISAO("Televisão");
+
+    private String descricao;
+
+    private TipoProduto(String descricao) {
+        this.descricao = descricao;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public static void mostrarInformacoes() {
+        for (TipoProduto tipo : TipoProduto.values()) {
+            System.out.println(tipo.name() + ": " + tipo.getDescricao());
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        TipoProduto.mostrarInformacoes();
+    }
+}

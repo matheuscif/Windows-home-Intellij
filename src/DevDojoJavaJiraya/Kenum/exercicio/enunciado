@@ -1,0 +1,13 @@
+Suponha que você esteja desenvolvendo um sistema de uma loja que vende produtos eletrônicos. Crie uma enumeração chamada
+ "TipoProduto" para representar os diferentes tipos de produtos eletrônicos disponíveis na loja.
+
+Essa enumeração deve conter os seguintes tipos de produtos:
+
+CELULAR
+TABLET
+NOTEBOOK
+TELEVISAO
+Cada tipo de produto deve ter um atributo adicional chamado "descricao" que representa uma breve descrição do produto.
+
+Além disso, a enumeração "TipoProduto" deve ter um método público chamado "mostrarInformacoes" que imprime na tela a
+descrição de cada tipo de produto.
