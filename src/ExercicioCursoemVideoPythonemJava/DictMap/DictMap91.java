@@ -21,7 +21,7 @@ public class DictMap91 {
 
         for (int i = 1; i < 5; i++) {
             String jogador = "Jogador " + i;
-            int dado = random.nextInt(1,6);
+            int dado = random.nextInt(6 + 1);
             jogo.put(jogador, dado);
 
         }
