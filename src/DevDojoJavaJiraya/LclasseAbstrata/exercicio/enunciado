@@ -1,0 +1,21 @@
+Suponha que você esteja desenvolvendo um sistema de um jogo de cartas. Crie uma classe abstrata chamada
+ "Carta" para representar uma carta genérica do jogo.
+
+A classe abstrata "Carta" deve ter os seguintes atributos privados:
+
+valor (uma String representando o valor da carta, por exemplo, "Ás", "2", "3", ..., "Rainha", "Rei")
+naipe (uma String representando o naipe da carta, por exemplo, "Espadas", "Copas", "Paus", "Ouros")
+Além disso, a classe abstrata "Carta" deve ter os seguintes métodos públicos abstratos:
+
+exibir(): que exibe na tela o valor e o naipe da carta.
+pontuacao(): que retorna a pontuação da carta, um valor numérico associado ao valor da carta no jogo.
+Agora, crie duas subclasses da classe "Carta" chamadas "CartaNumerica" e "CartaEspecial".
+
+A classe "CartaNumerica" deve representar uma carta com valor numérico (de 2 a 10). Ela deve implementar
+ os métodos abstratos "exibir()" e "pontuacao()" de acordo com o valor numérico da carta.
+
+A classe "CartaEspecial" deve representar uma carta especial do jogo, como um Ás, Valete, Dama ou Rei. Ela também deve
+ implementar os métodos abstratos "exibir()" e "pontuacao()" de acordo com o valor da carta especial.
+
+Por fim, crie uma classe "JogoCartas" com o método "main". Nesse método, crie algumas instâncias de "CartaNumerica" e
+ "CartaEspecial" e chame o método "exibir()" e "pontuacao()" para cada uma delas.
