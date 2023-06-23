@@ -1,0 +1,9 @@
+Preciso criar um bom enunciado para praticar meu POO em java
+
+pensei em criar um sisteminha onde um cliente vai as compras e deve especificar que tipo de cliente ele é
+
+nome dos produtos vão aparecer para ele na tela mostrando nome e valor
+
+cliente podera comprar mais de um produto e dependendo da forma de pagamento receberá um desconto,
+
+a ideia é replicar de forma bem básica as aulas de enum com uma interface.

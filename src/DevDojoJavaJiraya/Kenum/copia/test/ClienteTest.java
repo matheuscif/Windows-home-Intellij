@@ -22,5 +22,6 @@ public class ClienteTest {
         TipoCliente tipoCliente2 = TipoCliente.tipoClientePorNomeRelatorio("Pessoa Física221");
         System.out.println(tipoCliente2);
 
+
     }
 }
