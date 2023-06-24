@@ -1,0 +1,16 @@
+Crie uma interface chamada FormaGeometrica que declare os seguintes métodos:
+
+double calcularArea(): calcula a área da forma geométrica.
+double calcularPerimetro(): calcula o perímetro da forma geométrica.
+Em seguida, crie duas classes: Retangulo e Circulo, que implementem a interface
+FormaGeometrica e forneçam uma implementação para os métodos declarados.
+
+A classe Retangulo deve ter dois atributos: largura e altura, e os métodos calcularArea()
+ e calcularPerimetro() devem calcular a área e o perímetro do retângulo.
+
+A classe Circulo deve ter um atributo raio, e os métodos calcularArea()
+ e calcularPerimetro() devem calcular a área e o perímetro do círculo.
+
+Por fim, escreva um programa principal (classe Main) que demonstre
+o uso das classes Retangulo e Circulo, criando objetos dessas classes, chamando
+ os métodos e exibindo os resultados.
