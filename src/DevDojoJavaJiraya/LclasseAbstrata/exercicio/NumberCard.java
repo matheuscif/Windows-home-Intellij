@@ -8,11 +8,12 @@ public class NumberCard extends Card {
 
     @Override
     public void show() {
+        System.out.println(value + " " + suit.getName());
 
     }
 
     @Override
     public int score() {
-        return super.suit.getValue() + (Integer) super.value;
+        return super.suit.getValue() + Integer.parseInt(value);
     }
 }
