@@ -1,5 +1,6 @@
 Crie uma interface chamada FormaGeometrica que declare os seguintes métodos:
 
+
 double calcularArea(): calcula a área da forma geométrica.
 double calcularPerimetro(): calcula o perímetro da forma geométrica.
 Em seguida, crie duas classes: Retangulo e Circulo, que implementem a interface
