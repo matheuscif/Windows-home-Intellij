@@ -1,4 +1,11 @@
 package DevDojoJavaJiraya.Npolimorfismo.copia.servico;
 
-public class RepositorioArquivo {
+import DevDojoJavaJiraya.Npolimorfismo.copia.repositorio.Repositorio;
+
+public class RepositorioArquivo implements Repositorio {
+    @Override
+    public void salvar() {
+        System.out.println("Salvando em um arquivo.");
+    }
+
 }
