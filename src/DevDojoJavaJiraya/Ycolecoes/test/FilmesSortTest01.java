@@ -12,6 +12,7 @@ class ManageByIdComparator implements Comparator<Filme> {
     public int compare(Filme filme1, Filme filme2) {
         return filme1.getId().compareTo(filme2.getId());
     }
+
 }
 public class FilmesSortTest01 {
     public static void main(String[] args) {
