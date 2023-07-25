@@ -11,7 +11,7 @@ public class Serie {
 
     @Override
     public String toString() {
-        return "Filme{" +
+        return "Serie{" +
                 "title='" + title + '\'' +
                 ", episodes=" + episodes +
                 '}';
