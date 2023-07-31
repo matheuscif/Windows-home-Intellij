@@ -5,10 +5,17 @@ import java.util.Objects;
 public class Serie {
     private String title;
     private double price;
+    private Category category;
 
     public Serie(String title, double price) {
         this.title = title;
         this.price = price;
+    }
+
+    public Serie(String title, double price, Category category) {
+        this.title = title;
+        this.price = price;
+        this.category = category;
     }
 
     @Override
@@ -29,6 +36,7 @@ public class Serie {
         return "Serie{" +
                 "title='" + title + '\'' +
                 ", price=" + price +
+                ", category=" + category +
                 '}';
     }
 
@@ -38,5 +46,9 @@ public class Serie {
 
     public double getPrice() {
         return price;
+    }
+
+    public Category getCategory() {
+        return category;
     }
 }
